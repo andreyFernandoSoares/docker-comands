@@ -14,6 +14,8 @@ docker start -a -i {id-container} (Starta container ja baixado e Interage direta
 
 docker rm {id-container} (Remove container especificado)
 
+docker rm -f {id-container} (Força remoção container especificado)
+
 docker container prune (Remove todos containers)
 
 docker images (Montra todas suas imagens)
