@@ -6,3 +6,4 @@ docker run -v "{local-path}:{path-volume}" {image-name} (Referencia uma pasta da
 
 Example: 
 docker run -d -p 8080:3000 -v "C:\Users\Temp\Desktop\volume-exemplo:/var/www" -w "/var/www" node npm start
+docker run -d -p 8080:3000 -v "$(pwd):/var/www" -w "/var/www" node npm start (O pwd pega o path local como expressão)
