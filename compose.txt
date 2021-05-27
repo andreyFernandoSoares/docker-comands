@@ -1,0 +1,3 @@
+docker-compose build (Builda as imagens)
+docker-compose up -d (Sobe os containers, sem travar o terminal)
+docker-compose ps (Lista containers)
