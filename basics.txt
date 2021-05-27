@@ -20,6 +20,8 @@ docker container prune (Remove todos containers)
 
 docker images (Montra todas suas imagens)
 
+docker exec -it {container-name} {comands} (Executa um container com a possibilidade de passar comandos)
+
 docker rmi {image-name} (Remove imagem especifica)
 
 docker stop -t {seconds} (Remove apos tantos segundos o default é 10 segundos)
