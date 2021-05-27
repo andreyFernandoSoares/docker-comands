@@ -15,3 +15,13 @@ docker start {id-container} (Starta container ja baixado)
 docker stop {id-container} (Para container que esta sendo executado)
 
 docker start -a -i {id-container} (Starta container ja baixado e Interage diretamente com o terminal da imagem)
+
+docker rm {id-container} (Remove container especificado)
+
+docker container prune (Remove todos containers)
+
+docker images (Montra todas suas imagens)
+
+docker rmi {image-name} (Remove imagem especifica)
+
+docker stop -t {seconds} (Remove apos tantos segundos o default é 10 segundos)
