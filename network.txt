@@ -1,3 +1,5 @@
 docker network create --driver bridge {newtwork-name}
 
 docker run -it --name {container-name} --network {newtwork-name} {image-name} (OBS: O nome do container sera usado como um DNS).
+
+docker network ls (Lista redes)
