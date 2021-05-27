@@ -1,0 +1,9 @@
+docker build -f {dockerfile} -t {tag-image} {contex-path} (Build completo de uma imagem, a tag segue o padrao de maintainer/nome da imagem)
+
+Expor imagem no Dockerhub:
+docker login
+docker push {image-name}
+
+Outros:
+docker logout
+docker pull {image-name} (Baixa a imagem)
