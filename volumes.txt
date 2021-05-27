@@ -1,0 +1,8 @@
+docker run -v "{path-volume}" {image-name} (Cria um volume no docker)
+
+docker inspect {id-container} (Inspeciona dados do container)
+
+docker run -v "{local-path}:{path-volume}" {image-name} (Referencia uma pasta da maquina com a pasta de volumes)
+
+Example: 
+docker run -d -p 8080:3000 -v "C:\Users\Temp\Desktop\volume-exemplo:/var/www" -w "/var/www" node npm start
