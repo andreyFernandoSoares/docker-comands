@@ -35,3 +35,9 @@ docker machine ip (Mostra o ip da sua maquina virtual)
 docker run --name {container-name} {image-name} (Atrela um nome de container para sua imagem)
 
 docker run -d -p {external-port}:{internal-port} {image-name} (Roda uma imagem descoplada do terminal e indique as referencias de portas internas e externas)
+
+docker run -e {variavel-name}={variavel-value} {image-name} (Roda uma imagem inserindo uma variavel de ambiente)
+
+docker ps -q (Retorna apenas os ids)
+
+docker stop $(docker ps -q) (Expressão que executa comandos em cadeia, neste caso busca uma lista de ids e para os mesmos)
