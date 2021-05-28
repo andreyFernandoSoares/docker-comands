@@ -1,3 +1,4 @@
-docker-machine ls
-docker-machine create -d virtualbox {vm-name}
-docker machine start {vm-name}
+docker-machine ls (Lista vms)
+docker-machine create -d virtualbox {vm-name} (Cria vm com docker instalado)
+docker-machine start {vm-name}  (Inicia vm com docker instalado)
+docker-machine ssh {vm-name} (Acessa vm com docker instalado)
