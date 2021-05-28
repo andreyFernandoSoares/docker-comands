@@ -7,6 +7,7 @@ docker node inspect {vam-name} (Verifica informações de um nó)
 docker service create -p {external-port}:{internal-port} {image-name} (Obs: somente o manager pode criar um service, pois isso altera o estado de um nó)
 docker service ls (Lista serviços)
 docker service ps {id-serivce} (Detalhes de um serviço)
+docker swarm join-token manager (Tras codigo para criar nós managers)
 
 /var/lib/docker/swarm/ (Caminho dos dados para backup) Copiar para uma pasta a sua escolha.
 Para restaurar backup precisa copiar os dados salvados na pasta externa para dentro do cominho novamente.
