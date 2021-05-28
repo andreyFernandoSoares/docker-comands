@@ -8,4 +8,6 @@ docker service create -p {external-port}:{internal-port} {image-name} (Obs: some
 docker service ls (Lista serviços)
 docker service ps {id-serivce} (Detalhes de um serviço)
 
-/var/lib/docker/swarm/ (Caminho dos dados para backup)
+/var/lib/docker/swarm/ (Caminho dos dados para backup) Copiar para uma pasta a sua escolha.
+Para restaurar backup precisa copiar os dados salvados na pasta externa para dentro do cominho novamente.
+docker swarm init --force-new-cluster --advertise-addr {your machine ip} (Inicia swarm usando dados do backup)
