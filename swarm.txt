@@ -1,3 +1,6 @@
 docker swarm init --advertise-addr {your machine ip} (Inicia swarm transformando a maquina em manager)
 docker swarm join-token worker (Tras codigo para criar nós workers que seram orquestrados pelo manager)
 docker node ls (Lista todas vms do swarm, somente pode ser rodado em um manager)
+docker swarm leave (Muda status do worker para Down)
+docker node rm {id-worker} (Remove worker do swarm)
+docker node inspect {vam-name} (Verifica informações de um nó)
