@@ -41,3 +41,7 @@ docker run -e {variavel-name}={variavel-value} {image-name} (Roda uma imagem ins
 docker ps -q (Retorna apenas os ids)
 
 docker stop $(docker ps -q) (Expressão que executa comandos em cadeia, neste caso busca uma lista de ids e para os mesmos)
+
+docker container ls
+
+docker container run
