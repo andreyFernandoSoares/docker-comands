@@ -10,6 +10,7 @@ docker service ps {id-serivce} (Detalhes de um serviço)
 docker swarm join-token manager (Tras codigo para criar nós managers)
 docker node ls --format "...{{.value}}" (Formatar dados para mostar os ... é varargs)
 docker node demote {vm-name} (Rebaixa manager a worker)
+docker service rm {id-service} (Remove um serviço)
 
 Algoritimo consenso RAFT (Eleição de managers)
 
