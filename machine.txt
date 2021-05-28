@@ -1,0 +1,3 @@
+docker-machine ls
+docker-machine create -d virtualbox {vm-name}
+docker machine start {vm-name}
