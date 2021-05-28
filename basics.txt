@@ -44,6 +44,8 @@ docker stop $(docker ps -q) (Expressão que executa comandos em cadeia, neste ca
 
 docker container ls
 
+docker container ls -a
+
 docker container run {image-name}
 
 docker history {image-name}
