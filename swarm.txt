@@ -9,9 +9,11 @@ docker service ls (Lista serviços)
 docker service ps {id-serivce} (Detalhes de um serviço)
 docker swarm join-token manager (Tras codigo para criar nós managers)
 docker node ls --format "...{{.value}}" (Formatar dados para mostar os ... é varargs)
+docker node demote {vm-name} (Rebaixa manager a worker)
 
 Algoritimo consenso RAFT (Eleição de managers)
 
 /var/lib/docker/swarm/ (Caminho dos dados para backup) Copiar para uma pasta a sua escolha.
 Para restaurar backup precisa copiar os dados salvados na pasta externa para dentro do cominho novamente.
 docker swarm init --force-new-cluster --advertise-addr {your machine ip} (Inicia swarm usando dados do backup)
+
