@@ -2,3 +2,6 @@ docker-compose build (Builda as imagens)
 docker-compose up -d (Sobe os containers, sem travar o terminal)
 docker-compose ps (Lista containers)
 docker-compose down (Para os containers)
+
+docker stack deploy --compose-file {file-compose-name}.yml {stack-name} (Roda stack de comandos)
+docker stack ls (Lista stacks)
