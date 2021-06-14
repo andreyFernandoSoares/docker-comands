@@ -15,6 +15,7 @@ docker node update --availability drain {vm-name} (Restringe o nó, para nao rec
 docker node update --availability active {vm-name} (Retira restrição do nó, para nao receber tarefas)
 docker service update --constraint-add node.role==worker {id-service} (Restringe serviço para rodar somente em workers)
 docker service update --replicas {quanity-replicas} {id-service} (Aloca a quantidade de replicas em novas tarefas para um serviço)
+docker service scale {id-service}={quanity-replicas} (Aloca a quantidade de replicas em novas tarefas para um serviço)
 
 Algoritimo consenso RAFT (Eleição de managers)
 
