@@ -16,6 +16,7 @@ docker node update --availability active {vm-name} (Retira restrição do nó, p
 docker service update --constraint-add node.role==worker {id-service} (Restringe serviço para rodar somente em workers)
 docker service update --replicas {quanity-replicas} {id-service} (Aloca a quantidade de replicas em novas tarefas para um serviço)
 docker service scale {id-service}={quanity-replicas} (Aloca a quantidade de replicas em novas tarefas para um serviço)
+docker service create -p {external-port}:{internal-port} --mode global {image-name} (Inicia o serviço em modo global criando uma instancia do mesmo em todas vms)
 
 Algoritimo consenso RAFT (Eleição de managers)
 
