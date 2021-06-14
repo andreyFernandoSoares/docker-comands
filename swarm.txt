@@ -13,6 +13,7 @@ docker node demote {vm-name} (Rebaixa manager a worker)
 docker service rm {id-service} (Remove um serviço)
 docker node update --availability drain {vm-name} (Restringe o nó, para nao receber tarefas)
 docker node update --availability active {vm-name} (Retira restrição do nó, para nao receber tarefas)
+docker service update --constraint-add node.role==worker {id-service} (Restringe serviço para rodar somente em workers)
 
 Algoritimo consenso RAFT (Eleição de managers)
 
