@@ -11,6 +11,8 @@ docker swarm join-token manager (Tras codigo para criar nós managers)
 docker node ls --format "...{{.value}}" (Formatar dados para mostar os ... é varargs)
 docker node demote {vm-name} (Rebaixa manager a worker)
 docker service rm {id-service} (Remove um serviço)
+docker node update --availability drain {vm-name} (Restringe o nó, para nao receber tarefas)
+docker node update --availability active {vm-name} (Retira restrição do nó, para nao receber tarefas)
 
 Algoritimo consenso RAFT (Eleição de managers)
 
